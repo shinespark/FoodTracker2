@@ -41,7 +41,7 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XuI-pM-u6K"/>
                                         </connections>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-LV-szu">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-LV-szu">
                                         <rect key="frame" x="0.0" y="104.5" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -57,13 +57,16 @@
                                     <constraint firstAttribute="trailing" secondItem="U4R-TS-Zgk" secondAttribute="trailing" id="hrl-mT-U5m"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="szg-VI-Ugt" customClass="RatingControl" customModule="FoodTracker2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="483" width="329" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ih4-7x-fZp" secondAttribute="trailing" id="3Z8-dO-ecU"/>
                             <constraint firstItem="ih4-7x-fZp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8gU-Wn-4FU"/>
                             <constraint firstItem="ih4-7x-fZp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UPw-to-Q7u"/>
-                            <constraint firstItem="ih4-7x-fZp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="WE0-hQ-LhQ"/>
                             <constraint firstItem="ih4-7x-fZp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="pyJ-v8-hoe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -85,6 +88,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="320" height="320"/>
+        <image name="defaultPhoto" width="320" height="320"/>
     </resources>
 </document>
